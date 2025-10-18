@@ -2,7 +2,7 @@ def is_pangram(text):
     text = text.lower()
     letters = set()
     for c in text:
-        if (c >= 'а' and c <= 'я') or c == 'ё':
+        if (c >= 'а' and c <= 'я') or c == 'е':
             letters.add(c)
     alphabet = set([chr(i) for i in range(ord('а'), ord('я')+1)] + ['ё'])
     return letters >= alphabet
